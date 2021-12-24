@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Content from "./components/Content";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //jsx Javascript XML
+   <> 
+    <Header title="AppClient (props)" subtitle="Passando propriedade! (props)" />
+    <Content>
+      Texto de teste para passar conteúdo para componente. (children)
+    </Content>
+    <Content>
+      Mais um teste passando conteúdo para componente. (children)
+    </Content>
+   </>
   );
 }
 
